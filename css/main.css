@@ -1,0 +1,391 @@
+/******************* Variables *******************/
+body {
+  line-height: 1.6;
+  font-family: "Conv_Montserrat-Medium";
+  overflow-x: hidden;
+  color: #464646;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  letter-spacing: 3px;
+  color: #464646;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(58, 58, 58, 0.7);
+          box-shadow: 0 0 10px rgba(58, 58, 58, 0.7);
+}
+
+header .navbar-blue {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+}
+
+header .navbar-blue a {
+  color: #fff;
+}
+
+header .bg-dark {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+}
+
+header .bg-dark a {
+  color: #fff;
+}
+
+header .bg-dark .dropdown-menu {
+  background: rgba(12, 145, 175, 0.8);
+}
+
+main {
+  padding-top: 70px;
+}
+
+section .container > p {
+  margin: 20px auto 70px auto;
+  max-width: 700px;
+}
+
+.bg-white-btn {
+  text-align: center;
+  display: inline-block;
+  max-width: 250px;
+  background: #fff;
+  color: #034780;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-top: 1.8rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.bg-white-btn:hover {
+  -webkit-box-shadow: 0px 25px 33px -10px rgba(0, 0, 0, 0.42);
+          box-shadow: 0px 25px 33px -10px rgba(0, 0, 0, 0.42);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.bg-blue-btn {
+  text-align: center;
+  display: inline-block;
+  max-width: 250px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#13c8c2), to(#034780));
+  background-image: linear-gradient(to right bottom, #13c8c2, #034780);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-top: 1.8rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.bg-blue-btn:hover {
+  -webkit-box-shadow: 0px 25px 33px -10px rgba(0, 0, 0, 0.42);
+          box-shadow: 0px 25px 33px -10px rgba(0, 0, 0, 0.42);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+a {
+  text-decoration: none !important;
+  color: #034780;
+  font-weight: bold;
+}
+
+#hero-section {
+  position: relative;
+  color: #fff;
+  padding: 5rem 0 2rem;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+  min-height: 500px;
+}
+
+#hero-section::after {
+  content: "";
+  width: 100%;
+  padding-top: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("/images/top-img.png");
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+#hero-section .hero-content h1 {
+  color: #fff;
+}
+
+#hero-section .hero-img img {
+  max-width: 540px;
+  max-height: 500px;
+}
+
+#service-section {
+  padding: 5rem 0;
+}
+
+#service-section p {
+  max-width: 700px;
+  margin: 20px auto 70px auto;
+}
+
+#service-section .service-card {
+  position: relative;
+  background-color: #F9F9F9;
+  border: 2px solid #EEEEEE;
+  border-radius: 8px;
+  padding: 2.8em 1.8em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+#service-section .service-card p {
+  margin-bottom: 0;
+}
+
+#service-section .service-card .fa {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #13C8C2;
+  margin-bottom: 1.8rem;
+}
+
+#service-section .service-card .font-blue {
+  color: #034780;
+}
+
+#service-section .service-card hr {
+  width: 50px;
+  border: 1px solid #464646;
+  margin-bottom: 30px;
+}
+
+#service-section .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
+
+#service-section .service-card:hover {
+  background: rgba(249, 249, 249, 0);
+}
+
+#service-section .service-card:hover .fa,
+#service-section .service-card:hover h2,
+#service-section .service-card:hover p {
+  color: #fff;
+}
+
+#service-section .service-card:hover hr {
+  border: 1px solid #fff;
+}
+
+#service-section .service-card:hover::before {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  border-radius: 8px;
+}
+
+#about-us {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+  padding: 5rem 0;
+}
+
+#about-us img {
+  max-width: 100%;
+  max-width: 100%;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+#about-us #about-us-text {
+  color: #fff;
+  padding-left: 5rem;
+}
+
+#about-us #about-us-text p {
+  margin: 20px auto 25px auto;
+}
+
+#about-us #about-us-text ul {
+  padding-left: 1.1rem;
+}
+
+#about-us #about-us-text ul li {
+  margin-bottom: 10px;
+}
+
+#portfolio-section {
+  padding: 5rem 0;
+}
+
+#portfolio-section .toolbar {
+  display: inline-block;
+  background: #f9f9f9;
+  padding: 1rem 2rem;
+  border: 2px solid #eee;
+  border-radius: 25px;
+}
+
+#portfolio-section .toolbar button {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  padding: .5rem 1rem;
+}
+
+#portfolio-section .toolbar button.active {
+  color: #13C8C2;
+  font-weight: bold;
+}
+
+#portfolio-section .portfolio-card {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  margin-top: 2rem;
+}
+
+#portfolio-section .portfolio-card a {
+  color: #46464C;
+}
+
+#portfolio-section .portfolio-card a .image {
+  overflow: hidden;
+}
+
+#portfolio-section .portfolio-card a .image img {
+  max-width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#portfolio-section .portfolio-card a .content {
+  padding: 1rem;
+  background: #EEEEEE;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#portfolio-section .portfolio-card a:hover .image img {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+#portfolio-section .hide {
+  display: none;
+}
+
+#contact-section {
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+
+#contact-section .contact-info {
+  -webkit-box-shadow: 0 0 14px #ccc;
+          box-shadow: 0 0 14px #ccc;
+  padding: 3rem 2rem;
+}
+
+#contact-section .contact-info > div {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#contact-section .contact-info > div .fa {
+  font-size: 30px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: .75rem;
+}
+
+#contact-section .contact-info > div p {
+  width: auto;
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 50px;
+}
+
+#contact-section .contact-info > div:last-of-type {
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  padding: 1.1rem 0;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #034780), to(#13c8c2));
+  background: linear-gradient(to right bottom, #034780 20%, #13c8c2);
+}
+
+footer p {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
